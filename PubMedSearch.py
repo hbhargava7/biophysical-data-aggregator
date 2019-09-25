@@ -12,7 +12,6 @@ import Bio
 from Bio import Entrez
 import numpy as np
 import pandas as pd
-import scholarly
 from habanero import counts
 
 
