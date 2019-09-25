@@ -201,7 +201,7 @@ def multiJournalSearch(query, jStr):
 
 
 
-if __name__ == "__main__":
+def searchCoordinator(searchTerm):
     #Lets user choose prompt.
     #prompt = "Please choose your protein of interest. "
     #querry = input(prompt)
@@ -235,6 +235,9 @@ if __name__ == "__main__":
     if getCitCount == 1:
         queryDF = getCitationCount(queryDF)
 
+    return queryDF
+
+    """
     #Print and saved output
     if not queryDF.empty:
         print(queryDF)
@@ -242,3 +245,4 @@ if __name__ == "__main__":
         queryDF.to_csv("Test.csv")
     else:
         print("Sorry, this search yielded no results.")
+    """
