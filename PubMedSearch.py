@@ -1,6 +1,12 @@
 #We want to create a script that will take as input a uniprot ID
 #And will give as output a list of all publications from pubmed.
 
+#To add
+#API documentation for my functions, should be able to do help.
+#Communication to the issue tracker, in a single Git Hub.
+#Altmetrics citations
+
+
 import Bio
 from Bio import Entrez
 import numpy as np
