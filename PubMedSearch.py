@@ -1,6 +1,12 @@
 #We want to create a script that will take as input a uniprot ID
 #And will give as output a list of all publications from pubmed.
 
+#To add
+#API documentation for my functions, should be able to do help.
+#Communication to the issue tracker, in a single Git Hub.
+#Altmetrics citations
+
+
 import Bio
 from Bio import Entrez
 import numpy as np
@@ -195,7 +201,7 @@ def multiJournalSearch(query, jStr):
 
 
 
-if __name__ == "__main__":
+def searchCoordinator(searchTerm):
     #Lets user choose prompt.
     #prompt = "Please choose your protein of interest. "
     #querry = input(prompt)
@@ -229,6 +235,9 @@ if __name__ == "__main__":
     if getCitCount == 1:
         queryDF = getCitationCount(queryDF)
 
+    return queryDF
+
+    """
     #Print and saved output
     if not queryDF.empty:
         print(queryDF)
@@ -236,3 +245,4 @@ if __name__ == "__main__":
         queryDF.to_csv("Test.csv")
     else:
         print("Sorry, this search yielded no results.")
+    """
