@@ -4,8 +4,6 @@
 #To add
 #API documentation for my functions, should be able to do help.
 #Communication to the issue tracker, in a single Git Hub.
-#Altmetrics citations
-#Relevance
 #Set retmax to 10
 
 
@@ -18,19 +16,36 @@ from altmetric import Altmetric
 
 
 def searchPubMed(query):
-#This gets a list of IDs of articles associated with the protein.
+    """This function takes the user input, the protein/term to search, and
+    as output returns a dataframe with the results of the PubMed search.
+
+    Parameters:
+        query(str): protein or term to be searched in PubMed
+
+    Returnds:
+        Pandas dataframe, with PubMed IDs as indices and the following search
+        parameters as columns:
+            - Year of publication
+            - Lead author
+            - Senior author
+            - Journal
+            - DOI
+            - WebLink based on DOI
+
+    Example: queryDF = searchPubMed("PKC")"""
+
+    #This gets a list of IDs of articles associated with the protein.
     Entrez.email = "adamo.mancino@ucsf.edu"  #Q14524  #"Nav1.5"
-    handle = Entrez.esearch(db='pubmed', sort='Most Recent', retmax = 100000, retmode='xml', term=query) #, field = "Title") #maximum allowed is 100,000 by Entrez documentation
+    handle = Entrez.esearch(db='pubmed', sort='Most Relevant', retmax = 100000, retmode='xml', term=query) #, field = "Title") #maximum allowed is 100,000 by Entrez documentation
     #This will return a dictionary, get the "ID List" value
     searchResults = Entrez.read(handle)
     id_list = searchResults["IdList"]
-#    n_articles = len(id_list)
-    #print(n_articles)
-    #quit()
+
     if(len(id_list) == 0):
         noneDF = pd.DataFrame()
         return noneDF
 
+    #Initializing some important lists...
     listPMID = []
     listYear = []
     listTitle = []
@@ -39,38 +54,17 @@ def searchPubMed(query):
     listSeniorAuthor = []
     listWebLink = []
     listDOI = []
-#The efetch function takes as input a comma-separated string
-#eFetch has a difficult time handling large requests, take 1000 at a time...
+
+    #The efetch function takes as input a comma-separated string
     ids = ",".join(id_list)
     handle = Entrez.efetch(db='pubmed', retmode='xml', id=ids)
     fetchResults = Entrez.read(handle)
-#    print(fetchResults["PubmedArticle"][0]["PubmedData"]["ArticleIdList"][1])
-#    quit()
-#    s = (fetchResults["PubmedArticle"][0]["PubmedData"]["ArticleIdList"])
-#    print(s[2].attributes["IdType"])
-#    quit()
-#It returns a dictionary of lits.
-#Use the key "PubmedArticle" to get the list of articles.
-#Each entry in the list is a dictionary.
 
-    #Initialize lists of PMIDs, years, and titles
-
-    #print(fetchResults["PubmedArticle"][0]["MedlineCitation"]["Article"]["ArticleDate"][0]["Year"])   #["Article"]["Journal"]["JournalIssue"]["PubDate"]["Year"]))
-    #quit()
     n_articles = (len(fetchResults["PubmedArticle"]))
-#    quit()
-#    print(fetchResults["PubmedArticle"][920:927])
-#    quit()
 
-    #For each entry...
-        #print(fetchResults)
-    #This is to extract PMID, which is redundant but I don't know if the order changed at all...
-        #listPMID.append(
-
-
-    #quit()
-
+    #From the efetch, now let us take out some important parameters.
     for i in range(0, n_articles):
+    #This is to extract the PubMed ID
         try:
             listPMID.append(fetchResults["PubmedArticle"][i]["MedlineCitation"]["PMID"])
         except:
@@ -92,9 +86,8 @@ def searchPubMed(query):
                 except:
                     print("I cri. The problematic index is: " + str(i))
                     listYear.append(None)
-            #print(fetchResults["PubmedArticle"][i])
-            #quit()
-    #This is to get the journal name
+
+    #This is to get the journal name.
         try:
             listJournal.append(fetchResults["PubmedArticle"][i]["MedlineCitation"]["Article"]["Journal"]["Title"])
         except:
@@ -130,9 +123,8 @@ def searchPubMed(query):
         except:
             listDOI.append(None)
             listWebLink.append(None)
-    #This will get the number of citations associated with a DOI
 
-
+    #Now take all those lists and combine them into a dataframe.
     outputDF = pd.DataFrame(index = listPMID)
     outputDF["Year of Pub"] = listYear
     outputDF["Title"] = listTitle
@@ -145,61 +137,75 @@ def searchPubMed(query):
     print("PubMed Search Complete!")
     return outputDF
 
-#Pass the list of IDs to efetch'
-"""
-def searchGoogleScholar(query):
-
-    #print(scholarly.search_author("Marty Banks"))
-
-    search_query = scholarly.search_pubs_query(query)
-    nCount = 0
-    for x in search_query:
-        nCount = nCount + 1
-        print(nCount)
-    print("Final count is : " + str(nCount))
-
-#    nCount = 0
-#    for entry in search_query:
-#        print(next(entry))
-#        nCount =+ 1
-#    print(next(search_query))
-#    quit()
-"""
 
 def getCitsNumber(inputDF):
+    """This function reads in an already existing dataframe, typically the one
+    obtained from the searchPubMed function. It returns said dataframe with an
+    additional column, giving the number of citations for a given article DOI in the
+    table according to CrossRef.
 
+    Parameters:
+        inputDF(Pandas.DataFrame): this is a Pandas dataframe with PubMed ID as indices,
+        and a column labelled "DOI" with all the DOIs for the associated PubMed ID.
+
+    Returns:
+        Pandas.DataFrame, identical to input with addition of column "Citation Count"
+        giving the number of citations registered in CrossRef for a given article.
+
+    Example:
+        queryDF = getCitsNumber(queryDF)"""
+
+    #First gather the DOI for each article in the dataframe.
     doiList = inputDF["DOI"].tolist()
     listCitationsCount = []
-#    listAltScore = []
+
     count = 1
-#    quit()
+    #Now for every DOI, use CrossRef to find the number of associated citations.
     for entry in doiList:
         print(count)
         try:
             if entry != "":
                 nCit = counts.citation_count(doi = entry)
                 listCitationsCount.append(nCit)
-                print(nCit)
 
             else:
                 listCitationsCount.append(None)
         except:
             listCitationsCount.append(None)
-
         count = count + 1
 
+    #Now add a column of citation numbers to the dataframe.
     inputDF["Citation Count"] = listCitationsCount
     print("CrossRef Search Complete!")
 
     return inputDF
 
-def getAltScore(inputDF):
 
+
+def getAltScore(inputDF):
+    """This function reads in an already existing dataframe, typically the one
+    obtained from the searchPubMed function. It returns said dataframe with an
+    additional column, giving the Altmetric score for a given article DOI in the
+    table according to Altmetrics.
+
+    Parameters:
+        inputDF(Pandas.DataFrame): this is a Pandas dataframe with PubMed ID as indices,
+        and a column labelled "DOI" with all the DOIs for the associated PubMed ID.
+
+    Returns:
+        Pandas.DataFrame, identical to input with addition of column "Altmetric Score,"
+        giving the Altmetric score, calculated by Altmetrics, for a given article.
+
+    Example:
+        queryDF = getAltScore(queryDF)"""
+
+
+    #First gather the DOI for each article in the dataframe.
     doiList = inputDF["DOI"].tolist()
     listAltScore = []
-    count = 1
-    print(len(doiList))
 
+    count = 1
+    #Now for every DOI, use CrossRef to find the associated Altmetrics score.
     for entry in doiList:
         print("Getting Altmetrics Score")
         print(count)
@@ -209,7 +215,6 @@ def getAltScore(inputDF):
                 a = Altmetric()
                 thisDOI = a.doi(entry)
                 extractScore = thisDOI["score"]
-                print(extractScore)
                 listAltScore.append(extractScore)
 
             else:
@@ -219,16 +224,46 @@ def getAltScore(inputDF):
 
         count = count + 1
 
+    #Now add a column of Altmetrics scores to the dataframe.
     inputDF["Altmetric Score"] = listAltScore
     print("Altmetrics Search Complete!")
 
     return inputDF
 
 
+
 def multiJournalSearch(query, jStr):
+    """This function allows one to iteratively run the function searchPubMed
+    in the case when there are multiple journals to check. It takes as input the
+    search term and a string with a comma-separated list of journals to check, and returns as
+    output a dataframe similar to what is listed in searchPubMed documentation.
+
+    Parameters:
+        query(string) = protein or term to be searched in PubMed
+        jStr(string) = comma-separated list of journal names
+
+    Returns:
+        Pandas dataframe, with PubMed IDs as indices and the following search
+        parameters as columns:
+            - Year of publication
+            - Lead author
+            - Senior author
+            - Journal
+            - DOI
+            - WebLink based on DOI
+        This differs from searchPubMed because the dataframe will be a combination
+        of several dataframes, one for each journal in the input string jStr.
+
+    Example:
+        querryDF = multiJournalSearch("PKC", "Cell, Nature, Science")"""
+
+    #First separate the comma-separated journal list into a list of journals.
     jList = jStr.replace(" ","").split(",")
+    #Initialize a dataframe.
     DF = pd.DataFrame()
     initial = 0
+    #For each journal in the list, now run searchPubMed and extract a dataframe for the search
+    #term in that given journal. Append it to the existing dataframe.
     for j in jList:
         searchTerm = query + " " + j + "[Journal]"
         intDF = searchPubMed(searchTerm)
@@ -237,12 +272,41 @@ def multiJournalSearch(query, jStr):
             initial = 1
         else:
             DF = DF.append(intDF)
+
+    #Finally, return that dataframe.
     return DF
 
 
 
 def searchCoordinator(searchTerm):
-    #Lets user choose prompt.
+    """This function coordinates the search through PubMed, CrossRed, and Altmetrics.
+    It takes as input a string containing the intended search query, and returns as output
+    a dataframe. There are options to perform advanced searches, e.g. to search for a term
+    in titles only, in titles & abstracts only, in one specific journal, in multiple specific
+    journals, etc. But right now, they are set to the default: search for the term loosely
+    throughout the article, restrict the journals to Cell, Nature, and Science.
+
+    Parameters:
+        searchTerm(str) = protein or term to be searched in PubMed
+
+    Output:
+        Pandas dataframe, with PubMed IDs as indices and the following search
+        parameters as columns:
+            - Year of publication *sorted in descending order*
+            - Lead author
+            - Senior author
+            - Journal
+            - DOI
+            - WebLink based on DOI
+            - CrossRef citations count
+            - Altmetrics score
+
+    Example:
+        queryDF = searchCoordinator("Nav1.1")
+    """
+
+
+    #This lets user choose prompt.
     #prompt = "Please choose your protein of interest. "
     #querry = input(prompt)
 
@@ -261,7 +325,7 @@ def searchCoordinator(searchTerm):
         searchTerm = searchTerm + " " + journal + "[Journal]"
     #queryDF = searchGoogleScholar(searchTerm)
 
-
+    #Designing for searches over several journals.
     multiJournal = 1
     if multiJournal == 1 and inclJournal != 1:
         print("Implementing CNS Search.")
@@ -270,8 +334,10 @@ def searchCoordinator(searchTerm):
     else:
         queryDF = searchPubMed(searchTerm)
 
+    #This will organize the output dataframe by year of publication.
     queryDF = queryDF.sort_values(by = ["Year of Pub"], ascending = False)
 
+    #This will get both the number of citations and the Altmetrics score, if requested.
     getCitCount = 1
     if getCitCount == 1:
         queryDF = getCitsNumber(queryDF)
@@ -284,8 +350,8 @@ def searchCoordinator(searchTerm):
         queryDF.to_csv("Test.csv")
     else:
         print("Sorry, this search yielded no results.")
-
     return queryDF
+
 
 
 if __name__ == "__main__":
