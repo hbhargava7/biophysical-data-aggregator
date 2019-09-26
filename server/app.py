@@ -12,7 +12,7 @@ def main():
 def query():
     _query = request.form['inputQuery']
     print('pubmed query started')
-    _result = pms.searchPubMed(_query)
+    _result = pms.searchCoordinator(_query)
     _resultDict = _result.T.to_dict().values()
     print('pubmed query completed with ' + str(len(_resultDict)) + ' results.')
     return render_template('results.html', query=_query, result=_resultDict)
