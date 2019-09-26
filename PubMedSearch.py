@@ -205,9 +205,10 @@ def getAltScore(inputDF):
     listAltScore = []
 
     count = 1
+    print("Getting Altmetrics Score")
+
     #Now for every DOI, use CrossRef to find the associated Altmetrics score.
     for entry in doiList:
-        print("Getting Altmetrics Score")
         print(count)
         try:
             if entry != "":
@@ -355,4 +356,4 @@ def searchCoordinator(searchTerm):
 
 
 if __name__ == "__main__":
-    searchCoordinator("Nav1.1")
+    searchCoordinator("Hsp90")
