@@ -5,7 +5,8 @@
 #API documentation for my functions, should be able to do help.
 #Communication to the issue tracker, in a single Git Hub.
 #Altmetrics citations
-#
+#Relevance
+#Set retmax to 10
 
 
 import Bio
@@ -14,6 +15,7 @@ import numpy as np
 import pandas as pd
 import scholarly
 from habanero import counts
+from altmetric import Altmetric
 
 
 def searchPubMed(query):
@@ -165,24 +167,62 @@ def searchGoogleScholar(query):
 #    quit()
 """
 
-def getCitationCount(inputDF):
+def getCitsNumber(inputDF):
+
     doiList = inputDF["DOI"].tolist()
     listCitationsCount = []
+#    listAltScore = []
     count = 1
+#    quit()
     for entry in doiList:
         print(count)
         try:
             if entry != "":
                 nCit = counts.citation_count(doi = entry)
                 listCitationsCount.append(nCit)
+                print(nCit)
+
             else:
                 listCitationsCount.append(None)
         except:
             listCitationsCount.append(None)
+
         count = count + 1
 
     inputDF["Citation Count"] = listCitationsCount
     print("CrossRef Search Complete!")
+
+    return inputDF
+
+def getAltScore(inputDF):
+
+    doiList = inputDF["DOI"].tolist()
+    listAltScore = []
+    count = 1
+    print(len(doiList))
+
+    for entry in doiList:
+        print("Getting Altmetrics Score")
+        print(count)
+        try:
+            if entry != "":
+
+                a = Altmetric()
+                thisDOI = a.doi(entry)
+                extractScore = thisDOI["score"]
+                print(extractScore)
+                listAltScore.append(extractScore)
+
+            else:
+                listAltScore.append(None)
+        except:
+            listAltScore.append(None)
+
+        count = count + 1
+
+    inputDF["Altmetric Score"] = listAltScore
+    print("Altmetrics Search Complete!")
+
     return inputDF
 
 
@@ -223,8 +263,9 @@ def searchCoordinator(searchTerm):
     #queryDF = searchGoogleScholar(searchTerm)
 
 
-    multiJournal = 0
+    multiJournal = 1
     if multiJournal == 1 and inclJournal != 1:
+        print("Implementing CNS Search.")
         strList = "Nature, Science, Cell"
         queryDF = multiJournalSearch(searchTerm, strList)
     else:
@@ -234,11 +275,9 @@ def searchCoordinator(searchTerm):
 
     getCitCount = 1
     if getCitCount == 1:
-        queryDF = getCitationCount(queryDF)
+        queryDF = getCitsNumber(queryDF)
+        queryDF = getAltScore(queryDF)
 
-    return queryDF
-
-    """
     #Print and saved output
     if not queryDF.empty:
         print(queryDF)
@@ -246,4 +285,9 @@ def searchCoordinator(searchTerm):
         queryDF.to_csv("Test.csv")
     else:
         print("Sorry, this search yielded no results.")
-    """
+
+    return queryDF
+
+
+if __name__ == "__main__":
+    searchCoordinator("Nav1.1")
