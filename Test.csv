@@ -1,7 +1,104 @@
 ,Year of Pub,Title,Lead Author,Senior Author,Journal,DOI,Web Link,Citation Count,Altmetric Score
-27281198,2016,Selective spider toxins reveal a role for the Nav1.1 channel in mechanical pain.,Osteen JD,Julius D,Nature,10.1038/nature17976,https://doi.org/10.1038/nature17976,97,347.564
-22914087,2012,Autistic-like behaviour in Scn1a+/- mice and rescue by enhanced GABA-mediated neurotransmission.,Han JD,Catterall D,Nature,10.1038/nature11356,https://doi.org/10.1038/nature11356,263,96.65
-22495309,2012,Sporadic autism exomes reveal a highly interconnected protein network of de novo mutations.,O'Roak JD,Eichler D,Nature,10.1038/nature10989,https://doi.org/10.1038/nature10989,1170,164.046
-22541439,2012,Inhibitory interneuron deficit links altered network activity and cognitive dysfunction in Alzheimer model.,Verret L,Palop JJ,Cell,10.1016/j.cell.2012.02.046,https://doi.org/10.1016/j.cell.2012.02.046,367,59.5
-20466935,2010,Molecular identity of dendritic voltage-gated sodium channels.,Lorincz A,Nusser Z,"Science (New York, N.Y.)",10.1126/science.1187958,https://doi.org/10.1126/science.1187958,132,13.24
-18599753,2008,Epilepsy. When death strikes without warning.,Couzin A,Couzin Z,"Science (New York, N.Y.)",10.1126/science.321.5885.31,https://doi.org/10.1126/science.321.5885.31,2,
+31522888,2019,A Bacterial Effector Mimics a Host HSP90 Client to Undermine Immunity.,Lopez VA,Tagliabracci VS,Cell,10.1016/j.cell.2019.08.020,https://doi.org/10.1016/j.cell.2019.08.020,0,88.65
+29551266,2018,Multiplexed Proteome Dynamics Profiling Reveals Mechanisms Controlling Protein Homeostasis.,Savitski VA,Bantscheff VS,Cell,10.1016/j.cell.2018.02.030,https://doi.org/10.1016/j.cell.2018.02.030,33,59.75
+28823557,2017,Neural Precursor-Derived Pleiotrophin Mediates Subventricular Zone Invasion by Glioma.,Qin VA,Monje VS,Cell,10.1016/j.cell.2017.07.016,https://doi.org/10.1016/j.cell.2017.07.016,29,36.13
+28215707,2017,HSP90 Shapes the Consequences of Human Genetic Variation.,Karras VA,Lindquist VS,Cell,10.1016/j.cell.2017.01.023,https://doi.org/10.1016/j.cell.2017.01.023,34,77.3
+27716500,2016,Remembering the Past: A New Form of Protein-Based Inheritance.,Tuite VA,Tuite VS,Cell,10.1016/j.cell.2016.09.036,https://doi.org/10.1016/j.cell.2016.09.036,4,1.25
+27693355,2016,Intrinsically Disordered Proteins Drive Emergence and Inheritance of Biological Traits.,Chakrabortee VA,Jarosz VS,Cell,10.1016/j.cell.2016.09.017,https://doi.org/10.1016/j.cell.2016.09.017,66,94.78
+27783598,2016,Alternative modes of client binding enable functional plasticity of Hsp70.,Mashaghi J,Tans AD,Nature,10.1038/nature20137,https://doi.org/10.1038/nature20137,69,66.808
+27339980,2016,Atomic structure of Hsp90-Cdc37-Cdk4 reveals that Hsp90 traps and stabilizes an unfolded kinase.,Verba KA,Agard DA,"Science (New York, N.Y.)",10.1126/science.aaf5023,https://doi.org/10.1126/science.aaf5023,111,21.508
+27905439,2016,Susan Lee Lindquist (1949-2016).,Shorter J,Gitler AD,Nature,10.1038/540040a,https://doi.org/10.1038/540040a,2,37.28
+27706135,2016,The epichaperome is an integrated chaperome network that facilitates tumour survival.,Rodina J,Chiosis AD,Nature,10.1038/nature19807,https://doi.org/10.1038/nature19807,64,442.358
+27350246,2016,Mitochondrial unfolded protein response controls matrix pre-RNA processing and translation.,Münch J,Harper AD,Nature,10.1038/nature18302,https://doi.org/10.1038/nature18302,58,29.35
+26009011,2015,Improving survival by exploiting tumour dependence on stabilized mutant p53 for treatment.,Alexandrova J,Moll AD,Nature,10.1038/nature14430,https://doi.org/10.1038/nature14430,123,38.012
+25822791,2015,Defining fundamental steps in the assembly of the Drosophila RNAi enzyme complex.,Iwasaki J,Tomari AD,Nature,10.1038/nature14254,https://doi.org/10.1038/nature14254,52,71.462
+25079329,2014,Antifungal drug resistance evoked via RNAi-dependent epimutations.,Calo J,Heitman AD,Nature,10.1038/nature13575,https://doi.org/10.1038/nature13575,54,75.23
+25036637,2014,A quantitative chaperone interaction network reveals the architecture of cellular protein homeostasis pathways.,Taipale VA,Lindquist VS,Cell,10.1016/j.cell.2014.05.039,https://doi.org/10.1016/j.cell.2014.05.039,159,6.95
+24949977,2014,Glucocorticoid receptor function regulated by coordinated action of the Hsp90 and Hsp70 chaperone cycles.,Kirschke VA,Agard VS,Cell,10.1016/j.cell.2014.04.038,https://doi.org/10.1016/j.cell.2014.04.038,153,4.35
+24581495,2014,Hsp90-Tau complex reveals molecular basis for specificity in chaperone action.,Karagöz VA,Rüdiger VS,Cell,10.1016/j.cell.2014.01.037,https://doi.org/10.1016/j.cell.2014.01.037,142,85.04
+24604189,2014,Medicine. Combating evolution to fight disease.,Rosenberg KA,Queitsch DA,"Science (New York, N.Y.)",10.1126/science.1247472,https://doi.org/10.1126/science.1247472,32,43.614
+23542589,2013,Manipulation of small Rho GTPases is a pathogen-induced process detected by NOD1.,Keestra J,Bäumler AD,Nature,10.1038/nature12025,https://doi.org/10.1038/nature12025,115,33.85
+23746847,2013,Regulation of organismal proteostasis by transcellular chaperone signaling.,van Oosten-Hawle VA,Morimoto VS,Cell,10.1016/j.cell.2013.05.015,https://doi.org/10.1016/j.cell.2013.05.015,90,19.75
+23332754,2013,The myosin chaperone UNC-45 is organized in tandem modules to support myofilament formation in C. elegans.,Gazda VA,Clausen VS,Cell,10.1016/j.cell.2012.12.025,https://doi.org/10.1016/j.cell.2012.12.025,48,1.75
+23811228,2013,"The gene Sr33, an ortholog of barley Mla genes, encodes resistance to wheat stem rust race Ug99.",Periyannan KA,Lagudah DA,"Science (New York, N.Y.)",10.1126/science.1239028,https://doi.org/10.1126/science.1239028,160,65.656
+24337270,2013,Evolution. Cavefish study supports controversial evolutionary mechanism.,Pennisi KA,Pennisi DA,"Science (New York, N.Y.)",10.1126/science.342.6164.1304,https://doi.org/10.1126/science.342.6164.1304,1,9.2
+24337296,2013,Cryptic variation in morphological evolution: HSP90 as a capacitor for loss of eyes in cavefish.,Rohner KA,Tabin DA,"Science (New York, N.Y.)",10.1126/science.1240276,https://doi.org/10.1126/science.1240276,181,129.732
+22337030,2012,Prions and chaperones: Outside the fold.,Trivedi J,Trivedi AD,Nature,10.1038/482294a,https://doi.org/10.1038/482294a,3,207.216
+22820254,2012,Heterodimeric JAK-STAT activation as a mechanism of persistence to JAK2 inhibitor therapy.,Koppikar J,Levine AD,Nature,10.1038/nature11303,https://doi.org/10.1038/nature11303,176,2.5
+22174126,2012,Fitness trade-offs and environmentally induced mutation buffering in isogenic C. elegans.,Casanueva KA,Lehner DA,"Science (New York, N.Y.)",10.1126/science.1213491,https://doi.org/10.1126/science.1213491,76,36.86
+23075983,2012,Molecular biology: Choose your protein partners.,Samant J,Workman AD,Nature,10.1038/490351a,https://doi.org/10.1038/490351a,8,0.75
+22579285,2012,Hsp90 globally targets paused RNA polymerase to regulate gene expression in response to environmental stimuli.,Sawarkar VA,Paro VS,Cell,10.1016/j.cell.2012.02.061,https://doi.org/10.1016/j.cell.2012.02.061,81,3.6
+22939624,2012,Quantitative analysis of HSP90-client interactions reveals principles of substrate recognition.,Taipale VA,Lindquist VS,Cell,10.1016/j.cell.2012.06.047,https://doi.org/10.1016/j.cell.2012.06.047,381,20.0
+22286062,2012,Hsp90 stress potentiates rapid cellular adaptation through induction of aneuploidy.,Chen J,Li AD,Nature,10.1038/nature10795,https://doi.org/10.1038/nature10795,137,21.392
+22158248,2011,Predicting mutation outcome from early stochastic variation in genetic interaction partners.,Burga J,Lehner AD,Nature,10.1038/nature10665,https://doi.org/10.1038/nature10665,120,59.666
+22012391,2011,Chemical biology: Many faces of a cancer-supporting protein.,Darby J,Workman AD,Nature,10.1038/478334b,https://doi.org/10.1038/478334b,10,1.0
+20595578,2010,Peripheral protein quality control removes unfolded CFTR from the plasma membrane.,Okiyoneda KA,Lukacs DA,"Science (New York, N.Y.)",10.1126/science.1191542,https://doi.org/10.1126/science.1191542,239,4.0
+20705837,2010,Cell Biology. The proteome in balance.,Hutt KA,Balch DA,"Science (New York, N.Y.)",10.1126/science.1194160,https://doi.org/10.1126/science.1194160,30,
+20062045,2010,Hsp90 prevents phenotypic variation by suppressing the mutagenic activity of transposons.,Specchia J,Bozzetti AD,Nature,10.1038/nature08739,https://doi.org/10.1038/nature08739,175,12.612
+21205668,2010,Hsp90 and environmental stress transform the adaptive value of natural genetic variation.,Jarosz KA,Lindquist DA,"Science (New York, N.Y.)",10.1126/science.1195487,https://doi.org/10.1126/science.1195487,198,3.0
+19264983,2009,CD24 and Siglec-10 selectively repress tissue damage-induced immune responses.,Chen KA,Liu DA,"Science (New York, N.Y.)",10.1126/science.1168988,https://doi.org/10.1126/science.1168988,359,11.0
+18485875,2008,Granzyme A cleaves a mitochondrial complex I protein to initiate caspase-independent cell death.,Martinvalet VA,Lieberman VS,Cell,10.1016/j.cell.2008.03.032,https://doi.org/10.1016/j.cell.2008.03.032,112,6.688
+17956728,2007,Regulation of tumor cell mitochondrial homeostasis by an organelle-specific Hsp90 chaperone network.,Kang VA,Altieri VS,Cell,10.1016/j.cell.2007.08.028,https://doi.org/10.1016/j.cell.2007.08.028,241,4.0
+17700685,2007,Parkinson's disease: pro-survival effects of PINK1.,Abeliovich J,Abeliovich AD,Nature,10.1038/448759a,https://doi.org/10.1038/448759a,16,
+17923092,2007,Diverse cellular functions of the Hsp90 molecular chaperone uncovered using systems approaches.,McClellan VA,Frydman VS,Cell,10.1016/j.cell.2007.07.036,https://doi.org/10.1016/j.cell.2007.07.036,280,7.0
+16625188,2006,Crystal structure of an Hsp90-nucleotide-p23/Sba1 closed chaperone complex.,Ali J,Pearl AD,Nature,10.1038/nature04716,https://doi.org/10.1038/nature04716,523,4.5
+17008526,2006,"The Connectivity Map: using gene-expression signatures to connect small molecules, genes, and disease.",Lamb KA,Golub DA,"Science (New York, N.Y.)",10.1126/science.1132939,https://doi.org/10.1126/science.1132939,2197,58.366
+17110327,2006,CFTR: new members join the fold.,Skach VA,Skach VS,Cell,10.1016/j.cell.2006.11.002,https://doi.org/10.1016/j.cell.2006.11.002,14,
+17055424,2006,hsp90: twist and fold.,Richter VA,Buchner VS,Cell,10.1016/j.cell.2006.10.004,https://doi.org/10.1016/j.cell.2006.10.004,32,
+17055434,2006,Structural Analysis of E. coli hsp90 reveals dramatic nucleotide-dependent conformational rearrangements.,Shiau VA,Agard VS,Cell,10.1016/j.cell.2006.09.027,https://doi.org/10.1016/j.cell.2006.09.027,265,4.0
+17110338,2006,Hsp90 cochaperone Aha1 downregulation rescues misfolding of CFTR in cystic fibrosis.,Wang VA,Balch VS,Cell,10.1016/j.cell.2006.09.043,https://doi.org/10.1016/j.cell.2006.09.043,373,10.0
+16195452,2005,Hsp90 potentiates the rapid evolution of new traits: drug resistance in diverse fungi.,Cowen KA,Lindquist DA,"Science (New York, N.Y.)",10.1126/science.1118370,https://doi.org/10.1126/science.1118370,350,29.166
+16195450,2005,Cell biology. A fungal Achilles' heel.,Heitman KA,Heitman DA,"Science (New York, N.Y.)",10.1126/science.1119321,https://doi.org/10.1126/science.1119321,28,3.0
+15976272,2005,Antagonistic control of disease resistance protein stability in the plant immune system.,Holt KA,Dangl DA,"Science (New York, N.Y.)",10.1126/science.1109977,https://doi.org/10.1126/science.1109977,152,
+15766533,2005,Navigating the chaperone network: an integrative map of physical and genetic interactions mediated by the hsp90 chaperone.,Zhao VA,Houry VS,Cell,10.1016/j.cell.2004.12.024,https://doi.org/10.1016/j.cell.2004.12.024,477,1.0
+15935760,2005,Folding and quality control of the VHL tumor suppressor proceed through distinct chaperone pathways.,McClellan VA,Frydman VS,Cell,10.1016/j.cell.2005.03.024,https://doi.org/10.1016/j.cell.2005.03.024,154,3.0
+14718169,2004,The Mechanism of Hsp90 regulation by the protein kinase-specific cochaperone p50(cdc37).,Roe VA,Pearl VS,Cell,10.1016/s0092-8674(03)01027-4,https://doi.org/10.1016/s0092-8674(03)01027-4,203,9.0
+15294159,2004,Regulation of the myosin-directed chaperone UNC-45 by a novel E3/E4-multiubiquitylation complex in C. elegans.,Hoppe VA,Baumeister VS,Cell,10.1016/j.cell.2004.07.014,https://doi.org/10.1016/j.cell.2004.07.014,84,
+12891339,2003,Theoretical biology: safeguards and spurs.,Stearns J,Stearns AD,Nature,10.1038/424501a,https://doi.org/10.1038/424501a,10,
+12594497,2003,Molecular chaperones: Plugging the transport gap.,Ellis J,Ellis AD,Nature,10.1038/421801a,https://doi.org/10.1038/421801a,16,
+12526792,2003,Molecular chaperones Hsp90 and Hsp70 deliver preproteins to the mitochondrial import receptor Tom70.,Young VA,Hartl VS,Cell,10.1016/s0092-8674(02)01250-3,https://doi.org/10.1016/s0092-8674(02)01250-3,473,7.0
+12891357,2003,Evolutionary capacitance as a general feature of complex gene networks.,Bergman J,Siegal AD,Nature,10.1038/nature01765,https://doi.org/10.1038/nature01765,316,11.136
+14508471,2003,Cancer: the rules of attraction.,Neckers J,Lee AD,Nature,10.1038/425357a,https://doi.org/10.1038/425357a,36,
+14508491,2003,A high-affinity conformation of Hsp90 confers tumour selectivity on Hsp90 inhibitors.,Kamal J,Burrows AD,Nature,10.1038/nature01913,https://doi.org/10.1038/nature01913,799,10.5
+12089432,2002,Evolution. Chaperones as buffering agents?,Mitchell-Olds KA,Knight DA,"Science (New York, N.Y.)",10.1126/science.1073846,https://doi.org/10.1126/science.1073846,24,
+12077382,2002,Gene transcription. Demolition crew gets a hand from chaperones.,Marx KA,Marx DA,"Science (New York, N.Y.)",10.1126/science.296.5576.2125,https://doi.org/10.1126/science.296.5576.2125,1,
+11809970,2002,Role of the myosin assembly protein UNC-45 as a molecular chaperone for myosin.,Barral KA,Epstein DA,"Science (New York, N.Y.)",10.1126/science.1066648,https://doi.org/10.1126/science.1066648,153,3.5
+12077419,2002,Disassembly of transcriptional regulatory complexes by molecular chaperones.,Freeman KA,Yamamoto DA,"Science (New York, N.Y.)",10.1126/science.1073051,https://doi.org/10.1126/science.1073051,259,7.0
+12050657,2002,Hsp90 as a capacitor of phenotypic variation.,Queitsch J,Lindquist AD,Nature,10.1038/nature749,https://doi.org/10.1038/nature749,811,29.68
+12016281,2002,Plant genetics. A hidden Arabidopsis emerges under stress.,Marshall KA,Marshall DA,"Science (New York, N.Y.)",10.1126/science.296.5571.1218a,https://doi.org/10.1126/science.296.5571.1218a,2,
+12050643,2002,Developmental genetics: buffer zone.,Pigliucci J,Pigliucci AD,Nature,10.1038/417598a,https://doi.org/10.1038/417598a,18,
+11348596,2001,Silenced chromatin is permissive to activator binding and PIC recruitment.,Sekinger VA,Gross VS,Cell,10.1016/s0092-8674(01)00329-4,https://doi.org/10.1016/s0092-8674(01)00329-4,96,
+11264535,2001,Regulation of vegetative phase change in Arabidopsis thaliana by cyclophilin 40.,Berardini KA,Poethig DA,"Science (New York, N.Y.)",10.1126/science.1057144,https://doi.org/10.1126/science.1057144,79,
+10817991,2000,Evidence for the evolution of bdelloid rotifers without sexual reproduction or genetic exchange.,Mark Welch KA,Meselson DA,"Science (New York, N.Y.)",10.1126/science.288.5469.1211,https://doi.org/10.1126/science.288.5469.1211,371,54.252
+10778857,2000,"Molecular chaperones activate the Drosophila ecdysone receptor, an RXR heterodimer.",Arbeitman VA,Hogness VS,Cell,10.1016/S0092-8674(00)80624-8,https://doi.org/10.1016/S0092-8674(00)80624-8,106,3.0
+10786835,2000,Structure of TPR domain-peptide complexes: critical elements in the assembly of the Hsp70-Hsp90 multichaperone machine.,Scheufler VA,Moarefi VS,Cell,10.1016/S0092-8674(00)80830-2,https://doi.org/10.1016/S0092-8674(00)80830-2,719,6.0
+9989504,1999,"Structure of CheA, a signal-transducing histidine kinase.",Bilwes VA,Simon VS,Cell,10.1016/s0092-8674(00)80966-6,https://doi.org/10.1016/s0092-8674(00)80966-6,281,3.0
+10199405,1999,Transformation of MutL by ATP binding and hydrolysis: a switch in DNA mismatch repair.,Ban VA,Yang VS,Cell,10.1016/s0092-8674(00)80717-5,https://doi.org/10.1016/s0092-8674(00)80717-5,263,
+10331386,1999,Cause and effect in evolution.,Dickinson J,Seger AD,Nature,10.1038/19894,https://doi.org/10.1038/19894,27,0.5
+9580552,1998,Dynamic activation of endothelial nitric oxide synthase by Hsp90.,García-Cardeña J,Sessa AD,Nature,10.1038/33934,https://doi.org/10.1038/33934,692,3.0
+9665134,1998,A dimeric 14-3-3 protein is an essential cofactor for Raf kinase activity.,Tzivion J,Avruch AD,Nature,10.1038/27938,https://doi.org/10.1038/27938,264,
+9707123,1998,Crystal structure of a small heat-shock protein.,Kim J,Kim AD,Nature,10.1038/29106,https://doi.org/10.1038/29106,601,6.0
+9845064,1998,Cryptic clues revealed.,Cossins J,Cossins AD,Nature,10.1038/24483,https://doi.org/10.1038/24483,11,
+9845070,1998,Hsp90 as a capacitor for morphological evolution.,Rutherford J,Lindquist AD,Nature,10.1038/24550,https://doi.org/10.1038/24550,1412,72.406
+9874626,1998,Heat shock protein mutes genetic changes.,Pennisi KA,Pennisi DA,"Science (New York, N.Y.)",10.1126/science.282.5395.1796a,https://doi.org/10.1126/science.282.5395.1796a,3,
+9827806,1998,Crystal structure and ATPase activity of MutL: implications for DNA repair and mutagenesis.,Ban VA,Yang VS,Cell,10.1016/s0092-8674(00)81621-9,https://doi.org/10.1016/s0092-8674(00)81621-9,236,
+9727490,1998,Repression of heat shock transcription factor HSF1 activation by HSP90 (HSP90 complex) that forms a stress-sensitive complex with HSF1.,Zou VA,Voellmy VS,Cell,10.1016/s0092-8674(00)81588-3,https://doi.org/10.1016/s0092-8674(00)81588-3,694,9.0
+9121560,1997,An atypical topoisomerase II from Archaea with implications for meiotic recombination.,Bergerat J,Forterre AD,Nature,10.1038/386414a0,https://doi.org/10.1038/386414a0,454,6.0
+9230303,1997,Identification and structural characterization of the ATP/ADP-binding site in the Hsp90 molecular chaperone.,Prodromou VA,Pearl VS,Cell,10.1016/s0092-8674(00)80314-1,https://doi.org/10.1016/s0092-8674(00)80314-1,773,13.0
+9108479,1997,Crystal structure of an Hsp90-geldanamycin complex: targeting of a protein chaperone by an antitumor agent.,Stebbins VA,Pavletich VS,Cell,10.1016/s0092-8674(00)80203-2,https://doi.org/10.1016/s0092-8674(00)80203-2,825,12.0
+8939862,1996,A cyclophilin function in Hsp90-dependent signal transduction.,Duina KA,Gaber DA,"Science (New York, N.Y.)",10.1126/science.274.5293.1713,https://doi.org/10.1126/science.274.5293.1713,134,
+8918880,1996,20S cyclosome complex formation and proteolytic activity inhibited by the cAMP/PKA pathway.,Yamashita J,Yanagida AD,Nature,10.1038/384276a0,https://doi.org/10.1038/384276a0,93,
+8984629,1996,Expanding the eukaryote's cast of chaperones.,Pennisi KA,Pennisi DA,"Science (New York, N.Y.)",10.1126/science.274.5293.1613,https://doi.org/10.1126/science.274.5293.1613,14,3.0
+8939864,1996,Molecular chaperone machines: chaperone activities of the cyclophilin Cyp-40 and the steroid aporeceptor-associated protein p23.,Freeman KA,Morimoto DA,"Science (New York, N.Y.)",10.1126/science.274.5293.1718,https://doi.org/10.1126/science.274.5293.1718,244,
+8939863,1996,Chaperone function of Hsp90-associated proteins.,Bose KA,Buchner DA,"Science (New York, N.Y.)",10.1126/science.274.5293.1715,https://doi.org/10.1126/science.274.5293.1715,239,
+7604263,1995,Reversal of Raf-1 activation by purified and membrane-associated protein phosphatases.,Dent KA,Sturgill DA,"Science (New York, N.Y.)",10.1126/science.7604263,https://doi.org/10.1126/science.7604263,129,3.0
+7761850,1995,Hold 'em and fold 'em: chaperones and signal transduction.,Bohen KA,Yamamoto DA,"Science (New York, N.Y.)",10.1126/science.7761850,https://doi.org/10.1126/science.7761850,124,3.0
+7761857,1995,Role of the protein chaperone YDJ1 in establishing Hsp90-mediated signal transduction pathways.,Kimura KA,Lindquist DA,"Science (New York, N.Y.)",10.1126/science.7761857,https://doi.org/10.1126/science.7761857,140,6.0
+7913987,1994,Sequential interaction of the chaperones BiP and GRP94 with immunoglobulin chains in the endoplasmic reticulum.,Melnick J,Argon AD,Nature,10.1038/370373a0,https://doi.org/10.1038/370373a0,272,3.0
+8020093,1994,Mutations in Hsp83 and cdc37 impair signaling by the sevenless receptor tyrosine kinase in Drosophila.,Cutforth VA,Rubin VS,Cell,10.1016/0092-8674(94)90442-1,https://doi.org/10.1016/0092-8674(94)90442-1,167,3.0
+1614549,1992,Hsp90 chaperones protein folding in vitro.,Wiech J,Jakob AD,Nature,10.1038/358169a0,https://doi.org/10.1038/358169a0,313,9.0
+1376003,1992,Association of a 59-kilodalton immunophilin with the glucocorticoid receptor complex.,Tai KA,Schreiber DA,"Science (New York, N.Y.)",10.1126/science.1376003,https://doi.org/10.1126/science.1376003,188,6.0
+2234079,1990,Reduced levels of hsp90 compromise steroid receptor action in vivo.,Picard J,Yamamoto AD,Nature,10.1038/348166a0,https://doi.org/10.1038/348166a0,468,3.0
+2348863,1990,Identification of a functional intermediate in receptor activation in progesterone-dependent cell-free transcription.,Bagchi J,O'Malley AD,Nature,10.1038/345547a0,https://doi.org/10.1038/345547a0,57,3.0
+3374615,1988,Requirement of hormone for thermal conversion of the glucocorticoid receptor to a DNA-binding state.,Denis J,Gustafsson AD,Nature,10.1038/333686a0,https://doi.org/10.1038/333686a0,100,3.0
+2843290,1988,A movable and regulable inactivation function within the steroid binding domain of the glucocorticoid receptor.,Picard VA,Yamamoto VS,Cell,10.1016/0092-8674(88)90122-5,https://doi.org/10.1016/0092-8674(88)90122-5,209,34.55

@@ -41,10 +41,11 @@ def infoByID(inputIDs):
     listWebLink = []
 
     for name in inputIDs:
+        #Go in, and find another way to list, not by commas
+
         url = "http://www.rcsb.org/pdb/rest/customReport.csv?pdbids=" + name + "&CustomReportColumns=structureTitle,resolution,depositionDate,experimentalTechnique,pdbDoi&format=csv"
         rString = requests.get(url) #, allow_redirects=True)
         rList = str(rString.content).split(" />")
-
 
         parameterList = rList[0]
         del(rList[0])
@@ -53,15 +54,16 @@ def infoByID(inputIDs):
         for entry in rList:
             #print(entry)
             #quit()
-            entry = entry.replace("<br","").replace('"','')
-            valuesList = entry.split(",")
+            entry = entry.replace("<br","")
+            valuesList = entry.split('","')
 
-            listPDBID.append(valuesList[0])
+
+            listPDBID.append(valuesList[0].replace('"',''))
             listStructureTitle.append(valuesList[1])
             listResolution.append(valuesList[2])
             listDepositDate.append(valuesList[3])
             listMethod.append(valuesList[4])
-            listDOI.append(valuesList[5])
+            listDOI.append(valuesList[5].replace('"',''))
             url = "https://www.rcsb.org/structure/" + valuesList[0]
             listWebLink.append(url)
 
@@ -85,5 +87,6 @@ if __name__ == "__main__":
     listPDBs = getPDBIDs(searchTerm)
     print(listPDBs)
     DF = infoByID(listPDBs)
+    DF = DF.sort_values(by = ["Date of Deposit"], ascending = False)
     print(DF)
     DF.to_csv("PDB_Search.csv")
