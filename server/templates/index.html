@@ -5,7 +5,7 @@
         <title>Start a Query - BDA</title>
 
         <!-- Bootstrap Core CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
         <!-- Cover CSS -->
         <link rel="stylesheet" href="https://getbootstrap.com/docs/4.0/examples/cover/cover.css">
@@ -13,7 +13,7 @@
         <style type="text/css">
             html,
             body {
-               
+
             }
             .beta {
                 color: lightslategray;
@@ -22,12 +22,63 @@
             input {
                 background-color: black;
             }
+            #loading {
+
+            }
+            #spinners {
+                display:inline-block;
+            }
+            #loading {
+                margin: 0;
+                position: absolute;
+                top: 50%;
+                -ms-transform: translateY(-50%);
+                transform: translateY(-50%);
+            }
         </style>
     </head>
 
     <body>
         <div class="container">
-            <div class="cover-container d-flex h-100 p-3 mx-auto flex-column">
+            <div id="loading" class="">
+                <div class="row align-items-center">
+                    <h1>Loading Results...</h1>
+                </div>
+                <div class="row" id="spinners">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-border text-secondary" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-border text-success" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-border text-danger" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-border text-warning" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-border text-info" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-border text-light" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                    <div class="spinner-border text-dark" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+                <div class="row align-items-center">
+                    <h4 id="pubmed">Querying Pubmed...</h4>
+                </div>
+                <div class="row align-items-center">
+                    <h4 id="pdb">Querying Protein Data Bank...</h4>
+                </div>
+            </div>
+
+            <div id="content" class="cover-container d-flex h-100 p-3 mx-auto flex-column">
 
                 <header class="masthead mb-auto">
                     <div class="inner">
@@ -42,7 +93,8 @@
                 <main role="main" class="inner cover">
                     <h1>Start a biophysical data query.</h1>
                     <p class="lead">Enter query.</p>
-                    <form class="form-signin" action="/startQuery" method="post">
+
+                    <form class="form-signin" action="/startQuery" method="post" onsubmit="loading();">
                         <input type="query" name="inputQuery" id="inputQuery" class="form-control" placeholder="Query" required autofocus>  
                         <br>
                         <button id="btnSubmit" class="btn btn-lg btn-primary btn-block" type="go.">Go!</button>
@@ -61,30 +113,25 @@
         </div>
 
         <!-- jquery and Bootstrap Core JS -->
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
-        <!-- SocketIO JS -->
-        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js">
+
+        <script type="text/javascript">
+
+            function loading(){
+                $("#loading").children().show();
+                $("#loading").show()
+                $("#content").children().hide();   
+            }
         </script>
 
         <script type="text/javascript">
-            $(function() {
-                $('#btnSignUp').click(function() {
+            $( document ).ready(function() {
+                $("#loading").children().hide();
+                $("#loading").hide()
 
-                    $.ajax({
-                        url: '/query',
-                        data: $('form').serialize(),
-                        type: 'POST',
-                        success: function(response) {
-                            console.log(response);
-                        },
-                        error: function(error) {
-                            console.log(error);
-                        }
-                    });
-                });
             });
         </script>
     </body>
