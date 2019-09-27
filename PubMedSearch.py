@@ -146,7 +146,7 @@ def getCitsNumber(inputDF):
 
     Parameters:
         inputDF(Pandas.DataFrame): this is a Pandas dataframe with PubMed ID as indices,
-        and a column labelled "DOI" with all the DOIs for the associated PubMed ID.
+        and a column labelled "DOI" with the given DOI for the associated PubMed ID.
 
     Returns:
         Pandas.DataFrame, identical to input with addition of column "Citation Count"

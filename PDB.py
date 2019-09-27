@@ -1,4 +1,4 @@
-"""This script will allow enable the user to extract all structural information
+"""This script will enable the user to extract all structural information
 avaiable for a given protein search."""
 
 import urllib.request as urllib
