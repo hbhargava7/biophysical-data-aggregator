@@ -45,38 +45,73 @@
                 </header>
 
                 <main role="main" class="inner cover">
-                    <h1 class="cover-heading">Results for '{{ query }}'.</h1>
-                    <p><b>Here are your results.</b></p>
-<!--
-                    <div class="btn-group" role="group" aria-label="Actions">
-                                                 <button type="button" class="btn btn-success" onclick="location.href='/startQuery';">Start Query</button>
-                    </div>
--->
+                                        <br>
                     <br>
-                    <br>
-                     <div class="col-md-12">
+                    <h1 class="cover-heading">Results for {{ query }}.</h1>
 
-                    <table class="table table-dark">
-                        <thead>
-                            <tr>
-                                <th scope="col">Result Type </th>
-                                <th scope="col">Description</th>
-                                <th scope="col">Release Date</th>
-                                <th scope="col">Actions</th>
-                            </tr>
-                        </thead>
-                        <tbody id="classTable">
-                            {%for val in result%} 
-                            <tr>
-                                <td>{{val["Title"]}}</td>
-								<td>{{val["Journal"]}}</td>
-                                <td>Release</td>
-                                <td>Act</td>                            
-                            </tr>
-                            {%endfor%} 
-                        </tbody>
-                    </table>
+                    <p><b>{{summary["numStructures"]}} Structures Reported. The highest resolution structure is {{summary["highResID"]}} with a resolution of {{summary["highResolution"]}} Å.</b></p>
+                    
+                    <p><b>{{summary["numPapers"]}} publications reported in Cell, Science, and Nature. The most prolific laboratory on this subject appears to be that of {{summary["bestAuthor"]}}.</b></p>
+
+                    <br>
+                    <br>
+                    <div class="col-md-12">
+                        <h3><b>High-Profile Publications.</b></h3>
+                        <table class="table table-dark">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Lab</th>
+                                    <th scope="col">Journal</th>
+                                    <th scope="col">Altmetric</th>
+                                    <th scope="col">Link</th>
+
+                                </tr>
+                            </thead>
+                            <tbody id="classTable">
+                                {%for val in result%} 
+                                <tr>
+                                    <td>{{val["Year of Pub"]}}</td>
+                                    <td>{{val["Title"]}}</td>
+                                    <td>{{val["Senior Author"]}}</td>
+                                    <td>{{val["Journal"]}}</td>
+                                    <td>{{val["Altmetric Score"]}}</td>
+                                    <td> <button class="btn btn-success" onclick="window.open('{{val["Web Link"]}}','_blank')">Link</button></td>
+                                </tr>
+                                {%endfor%} 
+                            </tbody>
+                        </table>
                     </div>
+                    <div class="col-md-12">
+                        <h3><b>Structures.</b></h3>
+                        <table class="table table-dark">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Title</th>
+                                    <th scope="col">Author</th>
+                                    <th scope="col">Resolution</th>
+                                    <th scope="col">Method</th>
+                                    <th scope="col">Link</th>
+                                </tr>
+                            </thead>
+                            <tbody id="classTable">
+                                {%for val in pdb%} 
+                                <tr>
+                                    <td>{{val["Date of Deposit"]}}</td>
+                                    <td>{{val["Structure ID"]}}</td>
+                                    <td>{{val["Author"]}}</td>
+
+                                    <td>{{val["Resolution"]}}Å</td>
+                                    <td>{{val["Method Used"]}}</td>
+                                    <td> <button class="btn btn-success" onclick="window.open('{{val["Web Link"]}}','_blank')">Link</button></td>
+                                </tr>
+                                {%endfor%} 
+                            </tbody>
+                        </table>
+                    </div>
+
 
                 </main>
 

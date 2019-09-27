@@ -312,7 +312,7 @@ def searchCoordinator(searchTerm):
     #querry = input(prompt)
 
     #Assume that the search querry is set for now...
-    searchTerm = "Nav1.1"
+    #searchTerm = "Nav1.1"
     #Looking for simple search parameters.
     inTitle = 0
     if (inTitle == 1):
@@ -353,7 +353,3 @@ def searchCoordinator(searchTerm):
         print("Sorry, this search yielded no results.")
     return queryDF
 
-
-
-if __name__ == "__main__":
-    searchCoordinator("Hsp90")

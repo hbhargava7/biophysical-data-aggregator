@@ -3,6 +3,11 @@ import requests
 import numpy as np
 import pandas as pd
 
+def search(searchTerm):
+    listPDBs = getPDBIDs(searchTerm)
+    print(listPDBs)
+    DF = infoByID(listPDBs)
+    return(DF)
 
 def getPDBIDs(input):
     url = 'http://www.rcsb.org/pdb/rest/search'
@@ -39,9 +44,10 @@ def infoByID(inputIDs):
     listLigand = []
     listDOI = []
     listWebLink = []
+    listAuthor = []
 
     for name in inputIDs:
-        url = "http://www.rcsb.org/pdb/rest/customReport.csv?pdbids=" + name + "&CustomReportColumns=structureTitle,resolution,depositionDate,experimentalTechnique,pdbDoi&format=csv"
+        url = "http://www.rcsb.org/pdb/rest/customReport.csv?pdbids=" + name + "&CustomReportColumns=structureTitle,resolution,depositionDate,experimentalTechnique,pdbDoi,structureAuthor&format=csv"
         rString = requests.get(url) #, allow_redirects=True)
         rList = str(rString.content).split(" />")
 
@@ -63,6 +69,7 @@ def infoByID(inputIDs):
             listMethod.append(valuesList[4])
             listDOI.append(valuesList[5])
             url = "https://www.rcsb.org/structure/" + valuesList[0]
+            listAuthor.append(valuesList[6])
             listWebLink.append(url)
 
         #print(listPDBID[0] + ", " + listChains[0])
@@ -75,15 +82,8 @@ def infoByID(inputIDs):
     outputDF["Method Used"] = listMethod
     outputDF["DOI"] = listDOI
     outputDF["Web Link"] = listWebLink
+    outputDF["Author"] = listAuthor
 
     return outputDF
 
 
-
-if __name__ == "__main__":
-    searchTerm = "AMPA"
-    listPDBs = getPDBIDs(searchTerm)
-    print(listPDBs)
-    DF = infoByID(listPDBs)
-    print(DF)
-    DF.to_csv("PDB_Search.csv")
