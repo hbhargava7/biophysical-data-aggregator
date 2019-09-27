@@ -142,8 +142,3 @@ def search(searchTerm):
     else:
         DF = pd.DataFrame()
     return(DF)
-
-
-if __name__ == "__main__":
-    searchTerm = "PKC"
-    search(searchTerm)
