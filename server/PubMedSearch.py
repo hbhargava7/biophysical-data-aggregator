@@ -348,7 +348,6 @@ def searchCoordinator(searchTerm):
     if not queryDF.empty:
         print(queryDF)
         print(queryDF.shape)
-        queryDF.to_csv("Test.csv")
     else:
         print("Sorry, this search yielded no results.")
     return queryDF
