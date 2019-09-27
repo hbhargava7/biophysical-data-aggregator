@@ -336,13 +336,15 @@ def searchCoordinator(searchTerm):
         queryDF = searchPubMed(searchTerm)
 
     #This will organize the output dataframe by year of publication.
-    queryDF = queryDF.sort_values(by = ["Year of Pub"], ascending = False)
+    if not queryDF.empty:
+        #Only if this dataframe is not null
+        queryDF = queryDF.sort_values(by = ["Year of Pub"], ascending = False)
 
-    #This will get both the number of citations and the Altmetrics score, if requested.
-    getCitCount = 1
-    if getCitCount == 1:
-        queryDF = getCitsNumber(queryDF)
-        queryDF = getAltScore(queryDF)
+        #This will get both the number of citations and the Altmetrics score, if requested.
+        getCitCount = 1
+        if getCitCount == 1:
+            queryDF = getCitsNumber(queryDF)
+            queryDF = getAltScore(queryDF)
 
     #Print and saved output
     if not queryDF.empty:
@@ -350,5 +352,8 @@ def searchCoordinator(searchTerm):
         print(queryDF.shape)
     else:
         print("Sorry, this search yielded no results.")
+        print(queryDF)
     return queryDF
 
+if(__name__ == "__main__"):
+    searchCoordinator("Nav3")

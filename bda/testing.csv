@@ -1,0 +1,52 @@
+,PDB ID,Structure ID,Resolution,Date of Deposit,Method Used,DOI,Web Link,Author
+0,1WIK,Solution Structure of the PICOT homology 2 domain of the mouse PKC-interacting cousin of thioredoxin protein,,2004-05-28,SOLUTION NMR,10.2210/pdb1wik/pdb,https://www.rcsb.org/structure/1WIK,Miyamoto
+1,2KOH,NMR structure of mouse Par3-PDZ3 in complex with VE-Cadherin C-terminus,,2009-09-22,SOLUTION NMR,10.2210/pdb2koh/pdb,https://www.rcsb.org/structure/2KOH,Volkman
+2,1A25,C2 DOMAIN FROM PROTEIN KINASE C (BETA),2.7,1998-01-16,X-RAY DIFFRACTION,10.2210/pdb1a25/pdb,https://www.rcsb.org/structure/1A25,Sutton
+3,1TBO,NMR STRUCTURE OF A PROTEIN KINASE C-G PHORBOL-BINDING DOMAIN, 30 STRUCTURES,,1997-04-15,SOLUTION NMR,https://www.rcsb.org/structure/1TBO,10.2210/pdb1tbo/pdb
+4,1J2N,Solution structure of CPI-17(22-120) T38D,,2003-01-07,SOLUTION NMR,10.2210/pdb1j2n/pdb,https://www.rcsb.org/structure/1J2N,Ohki
+5,2KTR,NMR structure of p62 PB1 dimer determined based on PCS,,2010-02-05,SOLUTION NMR,10.2210/pdb2ktr/pdb,https://www.rcsb.org/structure/2KTR,Saio
+6,3IW4,Crystal structure of PKC alpha in complex with NVP-AEB071,2.8,2009-09-02,X-RAY DIFFRACTION,10.2210/pdb3iw4/pdb,https://www.rcsb.org/structure/3IW4,Stark
+7,1BDY,C2 DOMAIN FROM PROTEIN KINASE C DELTA,2.2,1998-05-11,X-RAY DIFFRACTION,10.2210/pdb1bdy/pdb,https://www.rcsb.org/structure/1BDY,Pappa
+8,3TWY,RAT PKC C2 DOMAIN BOUND TO PB,1.5,2011-09-22,X-RAY DIFFRACTION,10.2210/pdb3twy/pdb,https://www.rcsb.org/structure/3TWY,Li
+9,1K5O,CPI-17(35-120) deletion mutant,,2001-10-11,SOLUTION NMR,10.2210/pdb1k5o/pdb,https://www.rcsb.org/structure/1K5O,Ohki
+10,3ZEE,Electron cyro-microscopy helical reconstruction of Par-3 N terminal domain,6.1,2012-12-05,ELECTRON MICROSCOPY,10.2210/pdb3zee/pdb,https://www.rcsb.org/structure/3ZEE,Zhang
+11,2K20,Solution structure of Par-3 PDZ3 in complex with PTEN peptide,,2008-03-18,SOLUTION NMR,10.2210/pdb2k20/pdb,https://www.rcsb.org/structure/2K20,Feng
+12,3PFQ,Crystal Structure and Allosteric Activation of Protein Kinase C beta II,4.0,2010-10-28,X-RAY DIFFRACTION,10.2210/pdb3pfq/pdb,https://www.rcsb.org/structure/3PFQ,Leonard
+13,3ZYW,Crystal structure of the first glutaredoxin domain of human glutaredoxin 3 (GLRX3),1.84,2011-08-29,X-RAY DIFFRACTION,10.2210/pdb3zyw/pdb,https://www.rcsb.org/structure/3ZYW,Vollmar
+14,5WNK,Crystal structure of murine receptor-interacting protein 4 (Ripk4) D143N bound to TG100-115,3.11,2017-08-01,X-RAY DIFFRACTION,10.2210/pdb5wnk/pdb,https://www.rcsb.org/structure/5WNK,Huang
+15,3ZH8,A novel small molecule aPKC inhibitor,2.74,2012-12-20,X-RAY DIFFRACTION,10.2210/pdb3zh8/pdb,https://www.rcsb.org/structure/3ZH8,Kjaer
+16,1XJD,Crystal Structure of PKC-theta complexed with Staurosporine at 2A resolution,2.0,2004-09-23,X-RAY DIFFRACTION,10.2210/pdb1xjd/pdb,https://www.rcsb.org/structure/1XJD,Xu
+17,1TBN,NMR STRUCTURE OF A PROTEIN KINASE C-G PHORBOL-BINDING DOMAIN, MINIMIZED AVERAGE STRUCTURE,,1997-04-15,SOLUTION NMR,https://www.rcsb.org/structure/1TBN,10.2210/pdb1tbn/pdb
+18,2UZP,Crystal structure of the C2 domain of human protein kinase C gamma.,2.0,2007-04-30,X-RAY DIFFRACTION,10.2210/pdb2uzp/pdb,https://www.rcsb.org/structure/2UZP,Pike
+19,2FK9,Human protein kinase C, eta,1.75,2006-01-04,X-RAY DIFFRACTION,https://www.rcsb.org/structure/2FK9,10.2210/pdb2fk9/pdb
+20,4RA4,Crystal Structure of Human Protein Kinase C Alpha in Complex with Compound 28 ((R)-6-((3S,4S)-1,3-Dimethyl-piperidin-4-yl)-7-(2-fluoro-phenyl)-4-methyl-2,10-dihydro-9-oxa-1,2,https://www.rcsb.org/structure/4RA4,4a-triaza-phenanthren-3-one)
+21,5WNI,Crystal structure of murine receptor-interacting protein kinase 4 (Ripk4) D143N in complex with ATP,2.65,2017-08-01,X-RAY DIFFRACTION,10.2210/pdb5wni/pdb,https://www.rcsb.org/structure/5WNI,Huang
+22,2RLT,phosphorylated CPI-17 (22-120),,2007-08-11,SOLUTION NMR,10.2210/pdb2rlt/pdb,https://www.rcsb.org/structure/2RLT,Eto
+23,2WZ9,Crystal structure of the thioredoxin domain of human TXNL2,1.55,2009-11-25,X-RAY DIFFRACTION,10.2210/pdb2wz9/pdb,https://www.rcsb.org/structure/2WZ9,Vollmar
+24,3GPE,Crystal Structure Analysis of PKC (alpha)-C2 domain complexed with Ca2+ and PtdIns(4,5)P2,2.0,2009-03-23,X-RAY DIFFRACTION,https://www.rcsb.org/structure/3GPE,10.2210/pdb3gpe/pdb
+25,3TXO,PKC eta kinase in complex with a naphthyridine,2.05,2011-09-23,X-RAY DIFFRACTION,10.2210/pdb3txo/pdb,https://www.rcsb.org/structure/3TXO,Stark
+26,2NS5,The conserved N-terminal domain of Par-3 adopts a novel PB1-like structure required for Par-3 oligomerization and apical membrane localization,,2006-11-03,SOLUTION NMR,10.2210/pdb2ns5/pdb,https://www.rcsb.org/structure/2NS5,Feng
+27,2K1Z,Solution structure of Par-3 PDZ3,,2008-03-18,SOLUTION NMR,10.2210/pdb2k1z/pdb,https://www.rcsb.org/structure/2K1Z,Feng
+28,1J2M,Solution structure of CPI-17(22-120),,2003-01-07,SOLUTION NMR,10.2210/pdb1j2m/pdb,https://www.rcsb.org/structure/1J2M,Ohki
+29,4DNL,Crystal structure of a C2 domain of a protein kinase C alpha (PRKCA) from Homo sapiens at 1.90 A resolution,1.9,2012-02-08,X-RAY DIFFRACTION,10.2210/pdb4dnl/pdb,https://www.rcsb.org/structure/4DNL,Joint Center for Structural Genomics (JCSG)#Partnership for T-Cell Biology (TCELL)
+30,4I6P,Crystal structure of Par3-NTD domain,2.9,2012-11-29,X-RAY DIFFRACTION,10.2210/pdb4i6p/pdb,https://www.rcsb.org/structure/4I6P,Wang
+31,2ELI,Solution structure of the second Phorbol esters/diacylglycerol binding domain of human Protein kinase C alpha type,,2007-03-27,SOLUTION NMR,10.2210/pdb2eli/pdb,https://www.rcsb.org/structure/2ELI,Tochio
+32,2I0E,Structure of catalytic domain of human protein kinase C beta II complexed with a bisindolylmaleimide inhibitor,2.6,2006-08-10,X-RAY DIFFRACTION,10.2210/pdb2i0e/pdb,https://www.rcsb.org/structure/2I0E,Grodsky
+33,2KOJ,Solution structure of mouse Par-3 PDZ2 (residues 450-558),,2009-09-23,SOLUTION NMR,10.2210/pdb2koj/pdb,https://www.rcsb.org/structure/2KOJ,Volkman
+34,5WNM,Crystal structure of murine receptor-interacting protein 4 (Ripk4) D143N bound to tozasertib (VX-680),2.6,2017-08-01,X-RAY DIFFRACTION,10.2210/pdb5wnm/pdb,https://www.rcsb.org/structure/5WNM,Huang
+35,5WNL,Crystal structure of murine receptor-interacting protein 4 (Ripk4) D143N bound to staurosporine,2.5,2017-08-01,X-RAY DIFFRACTION,10.2210/pdb5wnl/pdb,https://www.rcsb.org/structure/5WNL,Huang
+36,5W4S,Solution structure of C2 domain from protein kinase C alpha in ternary complex with calcium and V5-pHM peptide,,2017-06-12,SOLUTION NMR,10.2210/pdb5w4s/pdb,https://www.rcsb.org/structure/5W4S,Yang
+37,2YAN,Crystal structure of the second glutaredoxin domain of human TXNL2,1.9,2011-02-23,X-RAY DIFFRACTION,10.2210/pdb2yan/pdb,https://www.rcsb.org/structure/2YAN,Vollmar
+38,4L1L,Rat PKC C2 domain bound to CD,1.6,2013-06-03,X-RAY DIFFRACTION,10.2210/pdb4l1l/pdb,https://www.rcsb.org/structure/4L1L,Morales
+39,2NCE,Solution Structure of Ca2+-bound C2 domain from Protein Kinase C alpha in the form of complex with V5-pHM peptide,,2016-03-28,SOLUTION NMR,10.2210/pdb2nce/pdb,https://www.rcsb.org/structure/2NCE,Yang
+40,2DIY,The solution structure of the thioredoxin domain of human Thioredoxin-like protein 2,,2006-03-30,SOLUTION NMR,10.2210/pdb2diy/pdb,https://www.rcsb.org/structure/2DIY,Tochio
+41,3RDJ,Rat PKC C2 domain Apo,1.9,2011-04-01,X-RAY DIFFRACTION,10.2210/pdb3rdj/pdb,https://www.rcsb.org/structure/3RDJ,Li
+42,2E73,Solution structure of the phorbol esters/diacylglycerol binding domain of protein kinase C gamma,,2007-01-05,SOLUTION NMR,10.2210/pdb2e73/pdb,https://www.rcsb.org/structure/2E73,Tanabe
+43,5LIH,Structure of a peptide-substrate bound to PKCiota core kinase domain,3.25,2016-07-14,X-RAY DIFFRACTION,10.2210/pdb5lih/pdb,https://www.rcsb.org/structure/5LIH,Soriano
+44,1DSY,C2 DOMAIN FROM PROTEIN KINASE C (ALPHA) COMPLEXED WITH CA2+ AND PHOSPHATIDYLSERINE,2.6,2000-01-10,X-RAY DIFFRACTION,10.2210/pdb1dsy/pdb,https://www.rcsb.org/structure/1DSY,Verdaguer
+45,2K6Q,LC3 p62 complex structure,,2008-07-17,SOLUTION NMR,10.2210/pdb2k6q/pdb,https://www.rcsb.org/structure/2K6Q,Noda
+46,5WNJ,Crystal structure of murine receptor-interacting protein kinase 4 (Ripk4) D143N in complex with lestaurtinib,2.55,2017-08-01,X-RAY DIFFRACTION,10.2210/pdb5wnj/pdb,https://www.rcsb.org/structure/5WNJ,Huang
+47,2KKC,NMR structure of the p62 PB1 domain,,2009-06-18,SOLUTION NMR,10.2210/pdb2kkc/pdb,https://www.rcsb.org/structure/2KKC,Yokochi
+48,2KOM,Solution structure of humar Par-3b PDZ2 (residues 451-549),,2009-09-24,SOLUTION NMR,10.2210/pdb2kom/pdb,https://www.rcsb.org/structure/2KOM,Volkman
+49,2OGP,Solution structure of the second PDZ domain of Par-3,,2007-01-07,SOLUTION NMR,10.2210/pdb2ogp/pdb,https://www.rcsb.org/structure/2OGP,Feng
+50,4DC2,Structure of PKC in Complex with a Substrate Peptide from Par-3,2.4,2012-01-17,X-RAY DIFFRACTION,10.2210/pdb4dc2/pdb,https://www.rcsb.org/structure/4DC2,Shang
