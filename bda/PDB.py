@@ -96,7 +96,7 @@ def infoByID(inputIDs):
             listDOI.append(valuesList[5].replace('"',''))
             url = "https://www.rcsb.org/structure/" + valuesList[0]
             listWebLink.append(url)
-            listAuthors.append(valuesList[6])
+            listAuthors.append(valuesList[6].split("#")[0])
 
         #print(listPDBID[0] + ", " + listChains[0])
 
@@ -142,3 +142,6 @@ def search(searchTerm):
     else:
         DF = pd.DataFrame()
     return(DF)
+
+if __name__ == "__main__":
+    print(search("PKC"))
